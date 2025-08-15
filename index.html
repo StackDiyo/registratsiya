@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratsiya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Chap menyu Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <p>Sog'lomhayot</p>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-vial"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i></a></li>
+            </ul>
+        </nav>
+       
+    </aside>
+
+    <!-- Asosiy qism -->
+    <main class="main-content">
+
+        <!-- Header nomlar va tugmalar -->
+        <header class="page-header">
+            <h1>Registratsiya</h1>
+            <nav class="tabs">
+                <button class="tab ">Shaxsiy ma’lumotlar</button>
+                <button class="tab active">Testlar</button>
+                <button class="tab">To‘lov</button>
+            </nav>
+        </header>
+
+        <!-- Kategoriya tugmalari -->
+        <section class="categories">
+            <button class="category active">Gemotologiya</button>
+            <button class="category">Analiz mochi</button>
+            <button class="category">Virusli gepatit </button>
+            <button class="category">Torch-infeksiya</button>
+            <button class="category">Infeksiya</button>
+            <button class="category">Gormonlar</button>
+            <button class="category ">Gemotologiya</button>
+            <button class="category">Analiz mochi</button>
+            <button class="category">Virusli gepatit </button>
+            <button class="category">Torch-infeksiya</button>
+            <button class="category">Infeksiya</button>
+            <button class="category">Gormonlar</button>
+            <button class="category ">Gemotologiya</button>
+            <button class="category">Analiz mochi</button>
+            <button class="category">Virusli gepatit </button>
+            <button class="category">Torch-infeksiya</button>
+            <button class="category">Infeksiya</button>
+            <button class="category">Gormonlar</button>
+            <button class="category ">Gemotologiya</button>
+            <button class="category">Analiz mochi</button>
+            <button class="category">Virusli gepatit </button>
+            <button class="category">Torch-infeksiya</button>
+            <button class="category">Infeksiya </button>
+            <button class="category">Gormonlar</button>
+        </section>
+
+        <!-- Testlar ro‘yxati -->
+        <section class="tests">
+            <h2>Gemotologiya</h2>
+            <form id="tests-form">
+                <label class="test-item">
+                    <input type="radio" name="test" value="Obshiy analiz qoni SOE" data-price="60000">
+                    <span>Общий анализ крови СОЭ</span>
+                    <span class="price">60.000</span>
+                </label>
+                <label class="test-item">
+                    <input type="radio" name="test" value="Grupa krovi Rezus faktor" data-price="60000">
+                    <span>Группа крови Резус фактор</span>
+                    <span class="price">60.000</span>
+                </label>
+                <label class="test-item">
+                    <input type="radio" name="test" value="Obsledovanie na rezus antitela RH" data-price="60000">
+                    <span>Обследование на резус антитела RH</span>
+                    <span class="price">60.000</span>
+                </label>
+                <label class="test-item">
+                    <input type="radio" name="test" value="Obsledovanie na rezus antitela RH" data-price="60000">
+                    <span>Обследование на резус антитела RH</span>
+                    <span class="price">60.000</span>
+                </label>
+            </form>
+            <button type="button" class="save-btn">Saqlash</button>
+        </section>
+
+    </main>
+
+    <!-- O‘ng panel -->
+    <aside class="right-panel">
+        <div class="form-group">
+            <label for="doctor">Taxliga yo‘llovchi shifokor</label>
+            <select id="doctor">
+                <option value="">Shifokorni tanlang...</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="analysis">Taxlil</label>
+            <select id="analysis">
+                <option value="">Tanlang...</option>
+            </select>
+        </div>
+
+        <table class="selected-tests">
+            <thead>
+                <tr>
+                    <th>T/r</th>
+                    <th>Nomi</th>
+                    <th>Amallar</th>
+                </tr>
+            </thead>
+            <tbody id="selected-tests-body">
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <p>Jami: <span id="total">0</span></p>
+            <p>To‘landi: <span id="paid">0</span></p>
+            <p>Qoldi: <span id="remaining">0</span></p>
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
